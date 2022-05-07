@@ -1,0 +1,356 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      h1{
+        font-family: arial;
+      }
+      #menu{
+        margin-top:15px;
+      }
+      #menu > ul{
+        background: #2c3e50;
+      }
+      #menu ul
+      {
+        list-style:none;
+        position:relative;
+        float:left;
+        margin:0;
+        padding:0;
+      }
+  
+      #menu ul a
+      {
+        display:block;
+        color:#fff;
+        text-decoration:none;
+        font-weight:700;
+        font-size:15px;
+        line-height:32px;
+        padding:0 15px;
+        font-family:Helvetica,Arial,sans-serif;
+      }
+  
+      #menu ul li
+      {
+        position:relative;
+        float:left;
+        margin:0;
+        padding:0
+      }
+  
+      #menu ul li.active
+      {
+        background:#27ae60
+      }
+  
+      #menu ul li:hover
+      {
+        /*background:#f6f6f6*/
+        background: #2ecc71;
+      }
+  
+      #menu ul ul
+      {
+        display:none;
+        position:absolute;
+        top:100%;
+        left:0;
+        background:black;
+        padding:0
+      }
+  
+      #menu ul ul li
+      {
+        float:none;
+        width:500px;
+        border-left: 3px solid #27ae60;
+
+      }
+      #menu ul ul li:hover{
+        border-left: 3px solid #2c3e50;
+      }
+  
+      #menu ul ul a
+      {
+        line-height:120%;
+        padding:10px 15px
+      }
+  
+      #menu ul ul ul
+      {
+        top:-4px;
+        left:100%
+      }
+  
+      #menu ul li:hover > ul
+      {
+        display:block
+      }
+      
+    h2,h3{
+          display: inline;
+
+        
+   
+      }
+      
+      a {
+          display: inline;
+          
+      }
+      #main{
+          height: 1400px;
+          width:100%;
+         
+          display: flex;
+          margin-top: 50px;
+
+      }
+      .small{
+          height: 1400px;
+          width:25%;
+          border: 1px solid red;
+      }
+
+      .big{
+          height: 1400px;
+          width:100%;
+         margin-top: 20px;
+          display: grid;
+          grid-template-columns: repeat(4,1fr);
+          grid-template-rows: repeat(4,300px);
+          row-gap: 30px;
+          column-gap: 30px;
+          text-align: center;
+
+      }
+
+      .big>div{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      }
+      .size{
+          height: 80%;
+          width: 70%;
+          text-align: center;
+
+      }
+     .nomargin{
+        font-size: 18px;
+         margin: 0%;
+         padding: 0;
+     }
+       .inline{
+           font-size: 18px;
+           display: inline;
+margin: 0%;
+padding: 0%;
+       }
+
+      </style>
+
+</head>
+<body>
+ 
+
+<h1 style="text-align: center;">Kitchen Tools</h1>
+
+<p style="text-align: center">Home > products > Kitchen Ware >Kitchen Tools</p>
+
+<div style="margin-left:300px;">
+
+  <nav id="menu">
+    <ul>
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Categories</a>
+        <ul>
+          <li><a href="clothing.html">Fashion</a>
+            <ul>
+                <li><a href="foot.html"><h2>Foot Wear     </h2> <h3>Shocks</h3></a></li>
+                <li><a href="foot.html">Men's footwear</a></li>
+                <li><a href="foot.html">Casual Chapple/Slippers</a></li>
+                <li><a href="foot.html">Casual Sandals</a></li>
+                <li><a href="foot.html"><h2>Casual/Party Shoes</h2> <h3>Shocks</h3></a></li>
+                <li><a href="foot.html">Chappal /Slippers</a></li>
+                <li><a href="foot.html">Crocs</a></li>
+                <li><a href="foot.html">Flip Flops</a></li>
+                <li><a href="#">Loafers</a></li>
+                <li><a href="#">Mojdi</a></li>
+                <li><a href="#"><h2>Sneakers</h2> <h3>Shocks</h3></a></li>
+                <li><a href="#">Sports Sandals</a></li>
+                <li><a href="#">Sports Shoes</a></li>
+                
+              </ul>
+        </li>
+          <li><a href="#">Kitchen</a>
+            <ul>
+                <li><h2>Kitchen Ware</h2><h3>Household Supplies</h3><h3>Grocery</h3>
+                <h3>Spice</h3></li>
+                <li><a href="airtight.html">Air Tight Containers</a></li>
+                <li><a href="airtight.html">Gas Lighter</a></li>
+                <li><a href="airtight.html">Kitchen Tools</a></li>
+              </ul>
+        </li>
+          <li><a href="#">Accessories</a>
+            <ul>
+                <li><a href="#"></a></li>
+                <h2> Unisex Bracelets</h2><h3>Jewellery</h3><h3>Bathroom Accessories</h3>
+                <h3>Spice</h3></li>
+              </ul>
+        </li>
+       
+         <li><a href="#">Health Personal Care</a>
+            
+            <ul>
+                <li><a href="kitchen 1.html"><h2>Health Care </h2><h3>Bombay Shaving Company</h3></li>
+                <li><a href="#"><h2> Day Joy</h2><h3>Day Joy</h3></li>
+                <li><a href="#"> <h2> Face Mask</h2><h3> Dr Batras
+                </h3></li>
+                <li><a href="#">  GNFC</a></li>
+                <li><a href="#"> Oxi9</a></li>
+                <li><a href="#">  Shreeji Sanjivani Gurukul</a></li>
+              </ul>
+        
+        </li>
+
+
+         <li><a href="#">Electronics</a>
+            <ul>
+                <li><a href="headphone.html"> Headphones</a></li>
+                <li><a href="headphone.html">From 549</a></li>
+                <li><a href="headphone.html">From 1132</a></li>
+                <li><a href="headphone.html">From 1714</a></li>
+                <li><a href="headphone.html">From 2297</a></li>
+              </ul>
+        </li>
+         
+          <li><a href="#">Electric Appilances</a>
+            <ul>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Speakers</a></li>
+               
+              </ul>
+        
+        </li>
+           
+
+        <li><a href="#">Paintings</a>
+            
+        </li>
+
+        <li><a href="#">Anti Punture Liquid</a>
+          
+        
+        </li>
+         
+         
+            <ul>
+              <li><a href="#">Deep Menu 1</a>
+                <ul>
+                  <li><a href="#">Sub Deep 1</a></li>
+                  <li><a href="#">Sub Deep 2</a></li>
+                  <li><a href="#">Sub Deep 3</a></li>
+                  <li><a href="#">Sub Deep 4</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Deep Menu 2</a></li>
+            </ul>
+          </li>
+         
+        </ul>
+      </li>
+
+      <li><a  href="#"> Customer/Guest login</a>
+       
+      </li>
+      <li><a  href="#">Merchant/Bulk Order</a>
+        
+      <li><a href="#">  Become A Seller</a></li>
+    
+
+  </nav>
+</div>
+<div id="main">
+<!-- <div class="small"></div> -->
+<div class="big">
+<div>
+    
+     
+    <img  class="size" src="https://www.uboric.com/wp-content/uploads/2019/12/fe4618c043ad5d860331149ed80888ef_result-400x400.jpg" alt="">
+   <p class="nomargin">1000 Thermosteel Hot and Cold Water...</p> 
+   <strike>₹1,999.00</strike> <P class="inline">₹1,399.00 </P>  
+
+</div>
+<div>
+    <img  class="size" src="https://www.uboric.com/wp-content/uploads/2019/12/fe2354c1ff2223538915e6c80416533b_result-400x400.jpg" alt="">
+    <p class="nomargin">1000 Thermosteel Hot and Cold Water...</p> 
+   <strike>₹1,999.00</strike> <P class="inline">₹1,399.00 </P> 
+</div>
+<div>
+    <img  class="size" src="https://www.uboric.com/wp-content/uploads/2019/12/1de99999291951b1f3799b8a82464aa3_result-400x400.jpg" alt="">
+    <p class="nomargin"> Milton Duo Deluxe 1000 Thermosteel 24...</p> 
+    <strike>₹1,999.00</strike> <P class="inline">₹1,299.00 </P> 
+</div>
+<div>
+    <img  class="size" src="https://www.uboric.com/wp-content/uploads/2019/12/a915cde9497a95a4b667d82a358f174f_result-400x400.jpg" alt="">
+    <p class="nomargin"> Milton Duo Deluxe 1000 Thermosteel 24...</p> 
+    <strike>₹1,999.00</strike> <P class="inline">₹1,299.00 </P> 
+   
+</div>
+<div>
+    <img  class="size" src="https://www.uboric.com/wp-content/uploads/2019/12/d4c25e9efd546803ca71d1a82fadc65b_result-400x400.jpg" alt="">
+    <p class="nomargin"> Milton Duo Deluxe 1000 Thermosteel 24...</p> 
+    <strike>₹1,999.00</strike> <P class="inline">₹1,299.00 </P> 
+</div>
+<div>
+    <img  class="size" src="https://www.uboric.com/wp-content/uploads/2019/12/4b51e0cf02d5f2529ccc61d3201fbe58_result-400x400.jpg" alt="">
+    <p class="nomargin"> Milton Duo Deluxe 1000 Thermosteel 24...</p> 
+    <strike>₹1,999.00</strike> <P class="inline">₹1,299.00 </P> 
+</div>
+<div>
+    <img class="size" src="https://www.uboric.com/wp-content/uploads/2019/12/b4bf30bb1519e85a2e9e55ca332bb4ab_result-400x400.jpg" alt="">
+    <p class="nomargin"> Milton Duo Deluxe 1000 Thermosteel 24...</p> 
+    <strike>₹1,999.00</strike> <P class="inline">₹1,299.00 </P> 
+</div>
+<div>
+    <img class="size" src="https://www.uboric.com/wp-content/uploads/2019/12/5ca7752dd0d34782f3b46e5c94cc0f3b_result-400x400.jpg" alt="">
+    <p class="nomargin"> Milton Duo Deluxe 1000 Thermosteel 24...</p> 
+    <strike>₹1,999.00</strike> <P class="inline">₹1,299.00 </P> 
+</div>
+<div>
+    <img  class="size" src="https://www.uboric.com/wp-content/uploads/2020/01/pexels-photo-1754062_result-400x400.jpeg" alt="">
+    <p class="nomargin"> Milton Duo Deluxe 1000 Thermosteel 24...</p> 
+    <strike>₹1,999.00</strike> <P class="inline">₹1,299.00 </P> 
+</div>
+<div>
+    <img class="size" src="https://www.uboric.com/wp-content/uploads/2019/12/7e7fee993140e1f6a3fc82179141f430_result-400x400.jpg" alt="">
+    <p class="nomargin"> Milton Duo Deluxe 1000 Thermosteel 24...</p> 
+    <strike>₹1,999.00</strike> <P class="inline">₹1,299.00 </P> 
+</div>
+<div>
+    <img  class="size" src="https://www.uboric.com/wp-content/uploads/2019/12/bef2b18d267aea052d02f7d537f8ad26_result-400x400.jpg" alt="">
+    <p class="nomargin"> Milton Duo Deluxe 1000 Thermosteel 24...</p> 
+    <strike>₹1,999.00</strike> <P class="inline">₹1,299.00 </P> 
+</div>
+
+</div>
+</div>
+
+
+
+
+
+</body>
+
+
+
+
+</html>

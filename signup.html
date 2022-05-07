@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#main{
+    height: 50px;
+    width: 98%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    margin:auto
+
+}
+#main>img{
+    height: 80%;
+    padding-left: 40%;
+}
+  
+.signin{
+    
+    width: 30%;
+   
+    margin: auto;
+    margin-top: 30px;
+    
+}
+.signin>p{
+    font-size: 40px;
+    
+}
+.signin>.email{
+    height: 40px;
+    width: 90%;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+.signin>.first{
+    height: 40px;
+    width: 90%;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+.signin>.lastone{
+    height: 40px;
+    width: 90%;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+.signin>.password{
+    height: 40px;
+    width: 90%;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+#checkbox{
+    padding-right: 90px;
+}
+.check{
+    height: 20px;
+    width: 20px;
+    padding-top: 5px;
+}
+#p1{
+    font-size: 15px;
+}
+a{
+    color:blue
+}
+a:hover{
+    cursor: pointer;
+}
+.submit{
+    height: 46px;
+    width: 92%;
+    border-radius: 8px;
+    background-color: blue;
+    color: aliceblue;
+    font-size: 20px;
+    
+}
+.last{
+
+    width: 250px;
+    
+    margin: auto;
+}
+.last>p{
+    text-align: center;
+}
+.last>img{
+    height: 20px;
+    width: 20px;
+    padding-left: 50px;
+}
+.last>img:hover{
+    cursor: pointer;
+}
+.p1:hover{
+        cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <div id="main">
+        
+    </div>
+    <form >
+    <div class="signin">
+        <p>Create an account</p>
+        <input class="email" type="text"   placeholder="Email address">
+        <input class="first" type="text" placeholder="First name">
+        <input class="lastone" type="text" placeholder="Last name">
+        <input class="password" type="password" placeholder="Password">
+        <br>
+          
+        <input class="check" type="checkbox"  >This is a public or shared device
+        <p id="p1"> <span><a>Terms and Conditions,</a> </span><span><a>Privacy Statement</a></a></span> and <span><a></a></span></p>
+         <input class="submit" type="submit" value="Continue">
+    </div>
+    
+</form>
+  <div class="last">
+      <p>Already have an account? <span><a href="login.html" >Sign in</a></span></p>
+      <p>or continue with</p>
+      <img src="https://a.travel-assets.com/egds/marks/apple.svg" />
+      <img src="https://a.travel-assets.com/egds/marks/facebook.svg" />
+      <img src="https://a.travel-assets.com/egds/marks/google.svg" />
+
+  </div>
+</body>
+</html>
+<script>
+
+
+
+var form=document.querySelector("form").addEventListener("submit", function(event){
+        event.preventDefault();
+
+    var data={
+       firstname: document.querySelector(".first").value,
+       lastname: document.querySelector(".lastone").value,
+       email: document.querySelector(".email").value,
+       password: document.querySelector(".password").value,
+   } 
+   console.log(data)
+   localStorage.setItem("userData",JSON.stringify(data))
+
+   window.location.href="login.html"
+
+
+})
+</script>

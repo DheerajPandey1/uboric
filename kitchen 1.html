@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.box{
+  transition: 1s;
+}
+.box .img{
+  display: block;
+  border-radius: 5px;
+}
+
+
+/* .box:hover{
+  transform: scale(1,3);
+  z-index: 2;
+} */
+
+
+
+
+
+
+
+
+
+#search{
+    height:80px;
+    width:100%;
+    /* border:1px solid #1E516c; */
+    display: flex;
+}
+#search>div{
+    height:80px;
+    width: 31%;
+    margin: auto;
+    /* border:1px solid #1E516c; */
+}
+.size{
+    height: 100%;
+    width: 100%;
+}
+/* search bar */
+
+/* categories */
+#menu{
+     
+     margin: auto;
+      margin-top: 30px;
+      height:50px;
+      width:60%;
+      /* border: 1px solid red; */
+    }
+    #menu > ul{
+      background: #2c3e50;
+    }
+    #menu ul
+    {
+      list-style:none;
+      position:relative;
+      float:left;
+      margin:0;
+      padding:0;
+    }
+
+    #menu ul a
+    {
+      display:block;
+      color:#fff;
+      text-decoration:none;
+      font-weight:700;
+      font-size:15px;
+      line-height:32px;
+      padding:0 15px;
+      font-family:Helvetica,Arial,sans-serif;
+    }
+
+    #menu ul li
+    {
+      position:relative;
+      float:left;
+      margin:0;
+      padding:0
+    }
+
+    #menu ul li.active
+    {
+      background:#27ae60
+    }
+
+    #menu ul li:hover
+    {
+      /*background:#f6f6f6*/
+      background: #2ecc71;
+    }
+
+    #menu ul ul
+    {
+      display:none;
+      position:absolute;
+      top:100%;
+      left:0;
+      background:black;
+      padding:0
+    }
+
+    #menu ul ul li
+    {
+      float:none;
+      width:500px;
+      border-left: 3px solid #27ae60;
+
+    }
+    #menu ul ul li:hover{
+      border-left: 3px solid #2c3e50;
+    }
+
+    #menu ul ul a
+    {
+      line-height:120%;
+      padding:10px 15px
+    }
+
+    #menu ul ul ul
+    {
+      top:-4px;
+      left:100%
+    }
+
+    #menu ul li:hover > ul
+    {
+      display:block
+    }
+    /* categories */
+    .kt{
+        text-align: center;
+    }
+   /* small div */
+    #main{
+          height: 1400px;
+          width:100%;
+        
+          display: flex;
+          margin-top: 50px;
+
+      }
+      .small{
+          height: 1400px;
+          width:25%;
+          /* border: 1px solid red; */
+          font-family: 'Barlow Condensed' , sans-serif;
+       
+        min-height: 40vh;
+      }
+      
+
+
+      .priceSlider
+        {
+        width: 300px;
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 10px 20px;
+        box-shadow: 0px 0px 3px 1px #888;  
+        margin-top: 400px; 
+        margin-left: 16px;
+        }
+        .priceSlider h1
+        {
+        font-size: 17px;
+        font-weight: bold;
+        }
+        .priceSlider p
+        {
+        font-size: 10px;
+        margin-top: 20px;    
+        }
+        .min-max label
+        {
+        font-size: 14px;
+        float: left;
+        margin-right: 5px;
+        line-height: 1.6;    
+        }
+        .min
+        {
+        float: left;    
+        }
+        .max
+        {
+        float: right;    
+        }
+        .min-max
+        {
+        width: 90%;
+        max-width: 200px;
+        margin: 0 auto;
+        padding: 25px 0px 15px 0px;    
+        }
+        .min-max span
+        {
+        font-size: 10px;
+        text-align: center;
+        display: inline-block;
+        width: 30px;
+        border: 1px solid #dedede;    
+        }
+        .min-max-range
+        {
+        padding: 30px 0px 20px 0px;    
+        }
+        .range
+        {
+        -webkit-appearance:none;
+        appearance:none;
+        width: 50%;
+        height: 10px;
+        max-width: 400px;
+        background-color: #dedede;
+        margin: 0;
+        padding: 0;
+        outline: none;
+        float: left;    
+        }
+        .range::-webkit-slider-thumb
+        {
+        -webkit-appearance:none;
+        appearance:none;
+        background-color: #0070BF;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        }
+        .range::moz-range-thumb
+        {
+        -webkit-appearance:none;
+        appearance:none;
+        background-color: #0070BF;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        }
+
+
+        /* slider style */
+
+        /* bigdiv */
+        h2,h3{
+          display: inline;
+
+        
+   
+      }
+      
+      a {
+          display: inline;
+          
+      }
+      #main{
+          height: 1400px;
+          width:100%;
+         
+          display: flex;
+          margin-top: 50px;
+
+      }
+      .small{
+          height: 1400px;
+          width:25%;
+          /* border: 1px solid red; */
+      }
+
+      .big{
+          height: 1400px;
+          width:100%;
+         
+          display: grid;
+          grid-template-columns: repeat(4,1fr);
+          grid-template-rows: repeat(4,330px);
+          row-gap: 15px;
+          column-gap: 15px;
+          text-align: center;
+
+      }
+
+      .big>div{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      }
+      .size{
+          height: 80%;
+          width: 70%;
+          text-align: center;
+
+      }
+     .nomargin{
+        font-size: 18px;
+         margin: 0%;
+         padding: 0;
+     }
+       .inline{
+           font-size: 18px;
+           display: inline;
+margin: 0%;
+padding: 0%;
+       }
+
+.footer{
+    height: 600px;
+    width: 100%;
+    margin-top: 15px;
+    
+}
+.ftimg{
+  height: 125%;
+  width: 100%;
+}
+
+.blfoot{
+  height: 300px;
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+    <div id="search">
+        <div>
+            <input type="search" text="search herer" placeholder="search herer">
+        </div>
+        <div>
+            <img class="size" src="https://www.uboric.com/wp-content/uploads/2021/04/uboric.svg" alt="">
+        </div>
+        <div></div>
+        </div>
+        <!-- search bar -->
+<!-- categories -->
+        <nav id="menu">
+            <ul>
+              <li class="active"><a href="home.html">Home</a></li>
+              <li><a href="#">Categories</a>
+                <ul>
+                  <li><a href="#">Fashion</a>
+                    <ul>
+                        <li><a href="#"><h2>Foot Wear     </h2> <h3>Shocks</h3></a></li>
+                        <li><a href="#">Men's footwear</a></li>
+                        <li><a href="#">Casual Chapple/Slippers</a></li>
+                        <li><a href="#">Casual Sandals</a></li>
+                        <li><a href="#"><h2>Casual/Party Shoes</h2> <h3>Shocks</h3></a></li>
+                        <li><a href="#">Chappal /Slippers</a></li>
+                        <li><a href="#">Crocs</a></li>
+                        <li><a href="#">Flip Flops</a></li>
+                        <li><a href="#">Loafers</a></li>
+                        <li><a href="#">Mojdi</a></li>
+                        <li><a href="#"><h2>Sneakers</h2> <h3>Shocks</h3></a></li>
+                        <li><a href="#">Sports Sandals</a></li>
+                        <li><a href="#">Sports Shoes</a></li>
+                        
+                      </ul>
+                </li>
+                  <li><a href="#">Kitchen</a>
+                    <ul>
+                        <li><h2>Kitchen Ware</h2><h3>Household Supplies</h3><h3>Grocery</h3>
+                        <h3>Spice</h3></li>
+                        <li><a href="#">Air Tight Containers</a></li>
+                        <li><a href="#">Gas Lighter</a></li>
+                        <li><a href="#">Kitchen Tools</a></li>
+                      </ul>
+                </li>
+                  <li><a href="#">Accessories</a>
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <h2> Unisex Bracelets</h2><h3>Jewellery</h3><h3>Bathroom Accessories</h3>
+                        <h3>Spice</h3></li>
+                      </ul>
+                </li>
+               
+                 <li><a href="#">Health Personal Care</a>
+                    
+                    <ul>
+                        <li><a href="#"><h2>Health Care </h2><h3>Bombay Shaving Company</h3></li>
+                        <li><a href="#"><h2> Day Joy</h2><h3>Day Joy</h3></li>
+                        <li><a href="#"> <h2> Face Mask</h2><h3> Dr Batras
+                        </h3></li>
+                        <li><a href="#">  GNFC</a></li>
+                        <li><a href="#"> Oxi9</a></li>
+                        <li><a href="#">  Shreeji Sanjivani Gurukul</a></li>
+                      </ul>
+                
+                </li>
+        
+        
+                 <li><a href="#">Electronics</a>
+                    <ul>
+                        <li><a href="#"> Headphones</a></li>
+                        <li><a href="#">From 549</a></li>
+                        <li><a href="#">From 1132</a></li>
+                        <li><a href="#">From 1714</a></li>
+                        <li><a href="#">From 2297</a></li>
+                      </ul>
+                </li>
+                 
+                  <li><a href="#">Electric Appilances</a>
+                    <ul>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Speakers</a></li>
+                       
+                      </ul>
+                
+                </li>
+                   
+        
+                <li><a href="#">Paintings</a>
+                    
+                </li>
+        
+                <li><a href="#">Anti Punture Liquid</a>
+                  
+                
+                </li>
+                 
+                 
+                    <ul>
+                      <li><a href="#">Deep Menu 1</a>
+                        <ul>
+                          <li><a href="#">Sub Deep 1</a></li>
+                          <li><a href="#">Sub Deep 2</a></li>
+                          <li><a href="#">Sub Deep 3</a></li>
+                          <li><a href="#">Sub Deep 4</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Deep Menu 2</a></li>
+                    </ul>
+                  </li>
+                 
+                </ul>
+              </li>
+        
+              <li><a  href="login.html"> Customer/Guest login</a>
+               
+              </li>
+              <li><a  href="bulkorder.html">Merchant/Bulk Order</a>
+                
+              <li><a href="seller.html">  Become A Seller</a></li>
+            
+        
+          </nav>
+        <!-- categories -->
+
+        <h1 class="kt">Kitchen Tools</h1>
+        <P class="kt">Home > Products > Kitchen Ware > Kitchen Tools</P>
+
+        <div id="main">
+            <!-- <div class="small">
+            price slider -->
+            <!-- <div class="priceSlider">
+              <h1>Price Range:</h1>
+              <p>Move Slider to choose the price range.</p> 
+                  
+              <div class="min-max">
+               <div class="min">
+                   <label>Min</label><span id="min-value"></span>
+               </div>
+               <div class="max">
+                   <label>Max</label><span id="max-value"></span>
+               </div>     
+              </div> 
+                  
+              <div class="min-max-range">
+              <input type="range" min="0" max="5000" value="2000" class="range" id="min">
+              <input type="range" min="5001" max="10000" value="8000" class="range" id="max">      
+              </div>    
+                  
+              <div style="clear: both;"></div>    
+              
+            <!-- price slider -->
+
+            <!-- </div> -->
+
+            <div class="big">
+                <div class="box">
+                    
+                     
+                    <img  class="size" src="https://www.uboric.com/wp-content/uploads/2021/12/81oIinPi8L._SL1500_-1-400x531.jpg" alt="">
+                   <p class="nomargin">1000 Thermosteel Hot and Cold Water...</p> 
+                   <strike>₹1,999.00</strike> <P class="inline">₹1,399.00 </P>  
+                
+                </div>
+                <div>
+                    <img  class="size" src="https://www.uboric.com/wp-content/uploads/2021/12/61PRuIt-ILL._SL1500_-400x400.jpg" alt="">
+                    <p class="nomargin">1000 Thermosteel Hot and Cold Water...</p> 
+                   <strike>₹1,999.00</strike> <P class="inline">₹1,399.00 </P> 
+                </div>
+                <div>
+                    <img  class="size" src="https://www.uboric.com/wp-content/uploads/2021/12/61c-GtJ0eL._SL1500_-400x383.jpg" alt="">
+                    <p class="nomargin"> Milton Duo Deluxe 1000 Thermosteel 24...</p> 
+                    <strike>₹1,999.00</strike> <P class="inline">₹1,299.00 </P> 
+                </div>
+                <div>
+                    <img  class="size" src="https://www.uboric.com/wp-content/uploads/2021/12/61aUqDnNokL._SL1500_-400x383.jpg" alt="">
+                    <p class="nomargin"> Milton Duo Deluxe 1000 Thermosteel 24...</p> 
+                    <strike>₹1,999.00</strike> <P class="inline">₹1,299.00 </P> 
+                   
+                </div>
+                <div>
+                    <img  class="size" src="https://www.uboric.com/wp-content/uploads/2020/12/61q57KwueBL._SL1280_-400x587.jpg" alt="">
+                    <p class="nomargin"> Milton Duo Deluxe 1000 Thermosteel 24...</p> 
+                    <strike>₹1,999.00</strike> <P class="inline">₹1,299.00 </P> 
+                </div>
+                <div>
+                    <img  class="size" src="https://www.uboric.com/wp-content/uploads/2020/08/shoptool-82-400x400.jpg" alt="">
+                    <p class="nomargin"> Milton Duo Deluxe 1000 Thermosteel 24...</p> 
+                    <strike>₹1,999.00</strike> <P class="inline">₹1,299.00 </P> 
+                </div>
+                <div>
+                    <img class="size" src="https://www.uboric.com/wp-content/uploads/2020/08/1-400x400.png" alt="">
+                    <p class="nomargin"> Milton Duo Deluxe 1000 Thermosteel 24...</p> 
+                    <strike>₹1,999.00</strike> <P class="inline">₹1,299.00 </P> 
+                </div>
+                <div>
+                    <img class="size" src="https://www.uboric.com/wp-content/uploads/2021/12/6112lAJ3NtL._SL1200_-400x400.jpg" alt="">
+                    <p class="nomargin"> Milton Duo Deluxe 1000 Thermosteel 24...</p> 
+                    <strike>₹1,999.00</strike> <P class="inline">₹1,299.00 </P> 
+                </div>
+                <div>
+                    <img  class="size" src="https://www.uboric.com/wp-content/uploads/2021/12/71I3R4zvlL._SL1500_-400x400.jpg" alt="">
+                    <p class="nomargin"> Milton Duo Deluxe 1000 Thermosteel 24...</p> 
+                    <strike>₹1,999.00</strike> <P class="inline">₹1,299.00 </P> 
+                </div>
+                <div>
+                    <img class="size" src="https://www.uboric.com/wp-content/uploads/2021/12/412Sh8obGvL.jpg" alt="">
+                    <p class="nomargin"> Milton Duo Deluxe 1000 Thermosteel 24...</p> 
+                    <strike>₹1,999.00</strike> <P class="inline">₹1,299.00 </P> 
+                </div>
+                <div>
+                    <img  class="size" src="https://www.uboric.com/wp-content/uploads/2021/12/61XA0sdOLgL._SL1500_-400x388.jpg" alt="">
+                    <p class="nomargin"> Milton Duo Deluxe 1000 Thermosteel 24...</p> 
+                    <strike>₹1,999.00</strike> <P class="inline">₹1,299.00 </P> 
+                </div>
+                <div>
+                    <img class="size" src="https://www.uboric.com/wp-content/uploads/2021/12/61fwB8qJ4rL._SL1500_-400x400.jpg" alt="">
+                    <p class="nomargin"> Milton Duo Deluxe 1000 Thermosteel 24...</p> 
+                    <strike>₹1,999.00</strike> <P class="inline">₹1,299.00 </P> 
+                </div>
+                <div>
+                     <img class="size" src="https://www.uboric.com/wp-content/uploads/2021/12/51JRFk1kqUL._SL1280_-150x150.jpg" alt="">
+                     <p class="nomargin"> Milton Duo Deluxe 1000 Thermosteel 24...</p> 
+                     <strike>₹1,999.00</strike> <P class="inline">₹1,299.00 </P> 
+                </div>
+                <div>
+                    <img class="size" src="https://www.uboric.com/wp-content/uploads/2021/12/61I2W8slZmS._SL1280_-400x315.jpg" alt="">
+                    <p class="nomargin"> Milton Duo Deluxe 1000 Thermosteel 24...</p> 
+                    <strike>₹1,999.00</strike> <P class="inline">₹1,299.00 </P> 
+                </div>
+                <div>
+                    <img class="size" src="https://www.uboric.com/wp-content/uploads/2021/12/51OzhBHOeaL._SL1024_-400x263.jpg" alt="">
+                    <p class="nomargin"> Milton Duo Deluxe 1000 Thermosteel 24...</p> 
+                    <strike>₹1,999.00</strike> <P class="inline">₹1,299.00 </P> 
+                </div>
+                <div>
+                    <img class="size" src="https://www.uboric.com/wp-content/uploads/2021/12/61XzlTs7upL._SL1500_-400x500.jpg" alt="">
+                    <p class="nomargin"> Milton Duo Deluxe 1000 Thermosteel 24...</p> 
+                    <strike>₹1,999.00</strike> <P class="inline">₹1,299.00 </P> 
+                </div>
+                </div>
+                </div>
+                
+                <div class="footer">
+                    <img class="ftimg" src="footer.png" alt="">
+                </div>
+                <div class="blfoot">
+                  <img class="ftimg" src="blfoot.png" alt="">
+              </div>
+</body>
+</html>
+
+<script>
+    var minSlider = document.getElementById('min');
+    var maxSlider = document.getElementById('max');
+    
+    var outputMin = document.getElementById('min-value');
+    var outputMax = document.getElementById('max-value');
+    
+    outputMin.innerHTML = minSlider.value;
+    outputMax.innerHTML = maxSlider.value;
+    
+    minSlider.oninput = function(){
+     outputMin.innerHTML=this.value;    
+    }
+    
+    maxSlider.oninput = function(){
+     outputMax.innerHTML=this.value;    
+    }
+    </script>

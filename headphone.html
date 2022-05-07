@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+
+
+
+
+#cartData {
+            position: fixed;
+            border: 2px solid black;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color:grey;
+            width: 15%;
+            height: 50%;
+            display: none;
+
+
+        }
+
+        #cartData img{
+            width:100%;
+            height:100%;
+        }
+        #team{
+            width:50px;
+            height:100px;
+        }
+        #checkout{
+            margin-top:130px;
+        }
+
+        #cartBack{
+            margin-top: 60px;
+            text-align: center;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #search {
+      height: 80px;
+      width: 100%;
+      /* border: 1px solid #1E516c; */
+      display: flex;
+    }
+
+    #search>div {
+      height: 80px;
+      width: 31%;
+      margin: auto;
+      /* border: 1px solid #1E516c; */
+    }
+
+    .size {
+      height: 100%;
+      width: 100%;
+    }
+
+    /* search bar */
+
+    /* categories */
+    #menu {
+
+      margin: auto;
+      margin-top: 30px;
+      height: 50px;
+      width: 60%;
+      /* border: 1px solid red; */
+    }
+
+    #menu>ul {
+      background: #2c3e50;
+    }
+
+    #menu ul {
+      list-style: none;
+      position: relative;
+      float: left;
+      margin: 0;
+      padding: 0;
+    }
+
+    #menu ul a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 32px;
+      padding: 0 15px;
+      font-family: Helvetica, Arial, sans-serif;
+    }
+
+    #menu ul li {
+      position: relative;
+      float: left;
+      margin: 0;
+      padding: 0
+    }
+
+    #menu ul li.active {
+      background: #27ae60
+    }
+
+    #menu ul li:hover {
+      /*background:#f6f6f6*/
+      background: #2ecc71;
+    }
+
+    #menu ul ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: black;
+      padding: 0
+    }
+
+    #menu ul ul li {
+      float: none;
+      width: 500px;
+      border-left: 3px solid #27ae60;
+
+    }
+
+    #menu ul ul li:hover {
+      border-left: 3px solid #2c3e50;
+    }
+
+    #menu ul ul a {
+      line-height: 120%;
+      padding: 10px 15px
+    }
+
+    #menu ul ul ul {
+      top: -4px;
+      left: 100%
+    }
+
+    #menu ul li:hover>ul {
+      display: block
+    }
+
+    /* categories */
+    .kt {
+      text-align: center;
+    }
+
+    /* small div */
+    /* #main{
+          height: 1400px;
+          width:100%;
+         border: 1px solid black;
+          display: flex;
+          margin-top: 50px;
+
+      }
+      .small{
+          height: 1400px;
+          width:25%;
+          border: 1px solid red;
+          font-family: 'Barlow Condensed' , sans-serif;
+       
+        min-height: 40vh;
+      }
+       */
+       #half>div {
+            height: 80px;
+            width: 33%;
+ }
+
+
+    .priceSlider {
+      width: 300px;
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 10px 20px;
+      box-shadow: 0px 0px 3px 1px #888;
+      margin-top: 400px;
+      margin-left: 16px;
+    }
+
+    .priceSlider h1 {
+      font-size: 17px;
+      font-weight: bold;
+    }
+
+    .priceSlider p {
+      font-size: 10px;
+      margin-top: 20px;
+    }
+
+    .min-max label {
+      font-size: 14px;
+      float: left;
+      margin-right: 5px;
+      line-height: 1.6;
+    }
+
+    .min {
+      float: left;
+    }
+
+    .max {
+      float: right;
+    }
+
+    .min-max {
+      width: 90%;
+      max-width: 200px;
+      margin: 0 auto;
+      padding: 25px 0px 15px 0px;
+    }
+
+    .min-max span {
+      font-size: 10px;
+      text-align: center;
+      display: inline-block;
+      width: 30px;
+      border: 1px solid #dedede;
+    }
+
+    .min-max-range {
+      padding: 30px 0px 20px 0px;
+    }
+
+    .range {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 50%;
+      height: 10px;
+      max-width: 400px;
+      background-color: #dedede;
+      margin: 0;
+      padding: 0;
+      outline: none;
+      float: left;
+    }
+
+    .range::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      background-color: #0070BF;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .range::moz-range-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      background-color: #0070BF;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+
+    /* slider style */
+
+    /* bigdiv */
+    /* h2,
+    h3 {
+      display: inline;
+
+
+
+    } */
+
+    a {
+      display: inline;
+
+    }
+
+    #main {
+      height: 1400px;
+      width: 100%;
+
+      display: flex;
+      margin-top: 50px;
+
+    }
+
+    .small {
+      height: 1400px;
+      width: 25%;
+      border: 1px solid red;
+    }
+
+    #big {
+      height: 1400px;
+width: 100%;
+
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, auto);
+      row-gap: 15px;
+      column-gap: 15px;
+      text-align: center;
+
+    }
+
+    #big>div{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      }
+    .size {
+      height: 80%;
+      width: 70%;
+      text-align: center;
+
+    }
+
+    .nomargin {
+      font-size: 18px;
+      margin: 0%;
+      padding: 0;
+    }
+
+    .inline {
+      font-size: 18px;
+      display: inline;
+      margin: 0%;
+      padding: 0%;
+    }
+
+    .footer {
+      height: 600px;
+      width: 100%;
+      margin-top: 15px;
+
+    }
+
+    .ftimg {
+      height: 125%;
+      width: 100%;
+    }
+
+    .blfoot {
+      height: 300px;
+      width: 100%;
+    }
+    .spicesImg{
+      width:200px;
+      height:200px;
+
+    }
+
+
+
+    .inline{
+      display: inline-block;
+
+    }
+    .att{
+      margin: 4%;
+      padding: 0%;
+      display: inline;
+    }
+    .fon{
+      font-size: 22px;
+      display: inline;
+    }
+    .btn{
+      display: block;
+     margin: auto;
+       margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="search">
+    <div>
+        <input style="width:300px;height:40px;margin-top:20px;margin-left:30px;" type="search" text="search herer"
+            placeholder="search herer">
+    </div>
+   
+    <div>
+        <img class="size" src="https://www.uboric.com/wp-content/uploads/2021/04/uboric.svg" alt="">
+    </div>
+    <div style="display:flex" id="half">
+        <div></div>
+        <div></div>
+        <div>
+            <img class="mart" style="height:100%;width:100%;"
+                src="data:image/png;base64,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"
+                alt="">
+        </div>
+        <div>
+            <img class="cartIcon" style="height:100%;width:100%;"
+                src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAH8AfwMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAAAQUEBgcCCP/EAC8QAAEDBAIBAgUDBAMAAAAAAAABAgMEBQYREiEHMYETIkFRcUJSYSOCkZIUFTL/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AO4gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABC+gEg0fO81uWMVtPT0GO1NzbNHzWViv4tXeuPysd31vvXqVWKeUZ7tklPaLrZHWxahFSN8krtq7XScXMb699gdNBCLskAAAAAAAAAAAAAABe0AAjj+TlXm+1SxRWzJqHaVFvnax70+iK5FYvs5ET+46sV+QWuK9WSutk/TKqF0ar+1VTpfyi6X2A5ZQZ35Gr6SKrocbp6inlTkyVkDtOT/AHEWeeRZqyejixundUwI10sSQO5MR3/lV+f66UwfGN0yunWuxi1JaEkoJHPcy4/FRUVXKjkbx+iO77T9RdRPzal8gzsRuPJca62NkcnKf4CxxyK1NLrlz+f8aAw5M+8iRV0NDLjdO2qna58UKwO5Pa3XJU+f6bT/ACK7PPItupJauvxqnp6aJNvkkhciN71+/wC5mvXNarPo9sx9bjQ21VROU/wUZK/W963y+T8aKLydcsrrH0GL3T/qFnrZGSMZbllVfXTefP6b76/aFdG8bZDdMmsLrldoKaHnO5kHwEVEc1vSqu1X9XJPY20wLHbIbPaaO3UqIkNNE2Nv86TtfdezPCAAAAAAAAAAAEO7RSSF9AOGeWKOtxvNqe92iqfRLcmcVnb1wemkfvpelTivsqmauD+SZa6K4rkVG+qjjWOOf/kLtGO0qon9LWl0hq/km6Vl3yi8U1zr1ght71bSUjmOVr1TSda6RyovLkv06LjFcAyLIbDSXSLLKujjnaqshc+Z2moukXaSIml1v0CrJmDeSo66avjyCkbVzMbHJN8d3JzW70i/0/ptSzxLAL/T5fHkGW11PWywRKkTmSOe5X60m9tTSIiu91NZyvA8kxuw1N2dllZVtp+KuiZJMxdK5EVd/EX03v2K/wAeX+60mXWangvNRcIq9UbVU0rpHJGve2/Oq9tROXJPwEfQ7fRCSE9EJAAAAAAAAAAAAAAKS8YnYL1Vx1V0tNLUzsTikkjO1T7Lr1T+F2XEcccTGsiY1jGpprWppET7HsAeJYo5Y3skY17HtVrmuTaOT7KVFmxSw2SpkqbXaaamnemlexnaJ9k+yfwhdAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/Z"
+                alt="">
+        </div>
+
+    </div>
+</div>
+<!-- search bar -->
+
+<!-- categories -->
+<div>
+    <nav id="menu">
+
+        <ul>
+            <li class="active"><a href="home.html">Home</li></a>
+            <li><a href="#">Categories</a>
+                <ul>
+                    <li><a href="#">Fashion</a>
+                        <ul>
+                            <li><a href="foot.html">
+                                    <h2>Foot Wear </h2>
+                                    <h3>Shocks</h3>
+                                </a></li>
+                            <li><a href="foot.html">Men's footwear</a></li>
+                            <li><a href="foot.html">Casual Chapple/Slippers</a></li>
+                            <li><a href="foot.html">Casual Sandals</a></li>
+                            <li><a href="foot.html">
+                                    <h2>Casual/Party Shoes</h2>
+                                    <h3>Shocks</h3>
+                                </a></li>
+                            <li><a href="#">Chappal /Slippers</a></li>
+                            <li><a href="#">Crocs</a></li>
+                            <li><a href="#">Flip Flops</a></li>
+                            <li><a href="#">Loafers</a></li>
+                            <li><a href="#">Mojdi</a></li>
+                            <li><a href="#">
+                                    <h2>Sneakers</h2>
+                                    <h3>Shocks</h3>
+                                </a></li>
+                            <li><a href="#">Sports Sandals</a></li>
+                            <li><a href="#">Sports Shoes</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="kitchen 1.html">Kitchen</a>
+                        <ul>
+                            <li>
+                                <h2>Kitchen Ware</h2>
+                                <h3>Household Supplies</h3>
+                                <h3>Grocery</h3>
+                                <h3>Spice</h3>
+                            </li>
+                            <li><a href="airtight.html">Air Tight Containers</a></li>
+                            <li><a href="#">Gas Lighter</a></li>
+                            <li><a href="#">Kitchen Tools</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Accessories</a>
+                        <ul>
+                            <li><a href="#"></a></li>
+                            <h2> Unisex Bracelets</h2>
+                            <h3>Jewellery</h3>
+                            <h3>Bathroom Accessories</h3>
+                            <h3>Spice</h3>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="#">Health Personal Care</a>
+
+                <ul>
+                    <li><a href="#">
+                            <h2>Health Care </h2>
+                            <h3>Bombay Shaving Company</h3>
+                    </li>
+                    <li><a href="#">
+                            <h2> Day Joy</h2>
+                            <h3>Day Joy</h3>
+                    </li>
+                    <li><a href="#">
+                            <h2> Face Mask</h2>
+                            <h3> Dr Batras
+                            </h3>
+                    </li>
+                    <li><a href="#"> GNFC</a></li>
+                    <li><a href="#"> Oxi9</a></li>
+                    <li><a href="#"> Shreeji Sanjivani Gurukul</a></li>
+                </ul>
+
+            </li>
+
+
+            <li><a href="#">Electronics</a>
+                <ul>
+                    <li><a href="#"> Headphones</a></li>
+                    <li><a href="#">From 549</a></li>
+                    <li><a href="#">From 1132</a></li>
+                    <li><a href="#">From 1714</a></li>
+                    <li><a href="#">From 2297</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Electric Appilances</a>
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Speakers</a></li>
+
+                </ul>
+
+            </li>
+
+
+            <li><a href="#">Paintings</a>
+
+            </li>
+
+            <li><a href="#">Anti Punture Liquid</a>
+
+
+            </li>
+
+
+            <ul>
+                <li><a href="#">Deep Menu 1</a>
+                    <ul>
+                        <li><a href="#">Sub Deep 1</a></li>
+                        <li><a href="#">Sub Deep 2</a></li>
+                        <li><a href="#">Sub Deep 3</a></li>
+                        <li><a href="#">Sub Deep 4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Deep Menu 2</a></li>
+            </ul>
+            </li>
+
+        </ul>
+        </li>
+
+        <li><a href="signup.html"> Customer/Guest login</a>
+
+        </li>
+        <li><a href="bulkorder.html">Merchant/Bulk Order</a>
+
+        <li><a href="seller.html"> Become A Seller</a></li>
+
+
+    </nav>
+</div>
+  <!-- categories -->
+
+  <h1 class="kt">Kitchen Tools</h1>
+  <P class="kt">Home > Products > Kitchen Ware > Kitchen Tools</P>
+
+  <div id="main">
+    <!-- <div class="small"> -->
+      <!-- price slider -->
+      <!-- <div class="priceSlider">
+        <h1>Price Range:</h1>
+        <p>Move Slider to choose the price range.</p>
+
+        <div class="min-max">
+          <div class="min">
+            <label>Min</label><span id="min-value"></span>
+          </div>
+          <div class="max">
+            <label>Max</label><span id="max-value"></span>
+          </div>
+        </div>
+
+        <div class="min-max-range">
+          <input type="range" min="0" max="5000" value="2000" class="range" id="min">
+          <input type="range" min="5001" max="10000" value="8000" class="range" id="max">
+        </div>
+
+        <div style="clear: both;"></div>
+      </div> -->
+      <!-- price slider -->
+
+    <!-- </div> -->
+
+    <div id="big">
+
+    </div>
+
+  </div>
+  <div class="footer">
+    <img class="ftimg" src="footer.png" alt="">
+</div>
+<div class="blfoot">
+  <img class="ftimg" src="blfoot.png" alt="">
+</div>
+<div id="cartData">
+  <div><p id="cartBack">X</p></div>
+
+              <div id="team"></div>
+
+  <div>
+      <button id="checkout"><a href="checkout.html">Checkout</a></button>
+  </div>
+
+</div>
+</body>
+
+</html>
+
+
+
+
+<script>
+  var obj_data = [
+    {
+      avtar: "https://www.uboric.com/wp-content/uploads/2021/05/51FhZHveTvS._AC_SL1080_-400x397.jpg",
+      // name: "Vijay Shankar Sharma",
+      Name: "Shoptool New Grocery Containers – 800..",
+      strprice:"₹749.00",
+      price:"₹599.00"
+    },
+    {
+      avtar: "https://www.uboric.com/wp-content/uploads/2022/01/519bIfsYsYS._SL1500_-400x400.jpg",
+      Name: "Shoptool New Grocery Containers – 800..",
+      // position: "Shoptool New Grocery Containers – 800..",
+      strprice:"₹1449.00",
+      price:"₹349.00"
+    },
+    {
+      avtar: "https://www.uboric.com/wp-content/uploads/2021/02/SONIC_GREEN1_result.jpg",
+      Name: "Shoptool New Grocery Containers – 800..",
+      // position: "Shoptool New Grocery Containers – 800..",
+      strprice:"₹849.00",
+      price:"₹599.00"
+    },
+    {
+      avtar: "https://www.uboric.com/wp-content/uploads/2021/02/SONIC1_ORANGE_result-e1614411329411.jpg",
+      Name: "Shoptool New Grocery Containers – 800..",
+      strprice:"₹849.00",
+      price:"₹599.00"
+
+    },
+    {
+      avtar: "https://www.uboric.com/wp-content/uploads/2021/06/photo_2021-06-13_09-51-29-400x400.jpg",
+      Name: "Shoptool New Grocery Containers – 800..",
+      strprice:"₹1149.00",
+      price:"₹999.00"
+    },
+    {
+      avtar: "https://www.uboric.com/wp-content/uploads/2021/09/1_500x.jpg",
+      Name: "Shoptool New Grocery Containers – 800..",
+      strprice:"₹1349.00",
+      price:"₹999.00"
+    },
+    {
+      avtar: "https://www.uboric.com/wp-content/uploads/2021/09/1_4475c045-47e6-48c2-81e2-fa8f4d7d5a94_500x.jpg",
+      Name: "Shoptool New Grocery Containers – 800..",
+      strprice:"₹1449.00",
+      price:"₹949.00"
+    },
+    {
+      avtar: "https://www.uboric.com/wp-content/uploads/2021/09/NECTORPROCOR1135-2_500x.jpg",
+      Name: "Shoptool New Grocery Containers – 800..",
+      strprice:"₹1449.00",
+      price:"₹999.00"
+
+    },
+    {
+      avtar: "https://www.uboric.com/wp-content/uploads/2021/09/1_4475c045-47e6-48c2-81e2-fa8f4d7d5a94_500x.jpg",
+      Name: "Shoptool New Grocery Containers – 800..",
+      strprice:"₹1449.00",
+      price:"₹989.00"
+    },
+    {
+      avtar: "https://www.uboric.com/wp-content/uploads/2021/09/NECTORPROCOR1135-2_500x.jpg",
+      Name: "Shoptool New Grocery Containers – 800..",
+      strprice:"₹1249.00",
+      price:"₹899.00"
+    },
+    {
+      avtar: "https://www.uboric.com/wp-content/uploads/2021/09/Untitleddesign_2_500x.jpg",
+      Name: "Shoptool New Grocery Containers – 800..",
+      strprice:"₹1449.00",
+      price:"₹899.00"
+    },
+    {
+      avtar: "https://www.uboric.com/wp-content/uploads/2021/09/NECTORPROCOR1135-7_500x.jpg",
+      Name: "Shoptool New Grocery Containers – 800..",
+      strprice:"₹1449.00",
+      price:"₹1249.00"
+
+    },
+    {
+      avtar: "https://www.uboric.com/wp-content/uploads/2021/09/Untitleddesign_1_500x-1.jpg",
+      Name: "Shoptool New Grocery Containers – 800..",
+      strprice:"₹1449.00",
+      price:"₹1249.00"
+    },
+    {
+      avtar: "https://www.uboric.com/wp-content/uploads/2021/09/1_952024d0-9cc5-4911-9bd1-2f8687d2150d_500x.jpg",
+      Name: "Shoptool New Grocery Containers – 800..",
+      strprice:"₹949.00",
+      price:"₹899.00"
+    },
+    {
+      avtar: "https://www.uboric.com/wp-content/uploads/2021/07/1-71.jpg",
+      Name: "Shoptool New Grocery Containers – 800..",
+      strprice:"₹649.00",
+      price:"₹449.00"
+    },
+    {
+      avtar: "https://www.uboric.com/wp-content/uploads/2021/07/Ambrane-Elite-Wireless-Earphones-400x287.jpg",
+      Name: "Shoptool New Grocery Containers – 800..",
+      strprice:"₹649.00",
+      price:"₹449.00"
+      
+    },
+
+  ]
+
+  var cartLs=[];
+localStorage.setItem("home",JSON.stringify(obj_data))
+
+  obj_data.forEach(function (elem) {
+    var box = document.createElement("div");
+
+    var investor_avtar = document.createElement("img");
+    investor_avtar.setAttribute("src", elem.avtar)
+    investor_avtar.setAttribute("class", "spicesImg")
+    console.log(investor_avtar)
+
+    var product_name = document.createElement("h3");
+    product_name.innerText = elem.Name;
+    product_name.setAttribute("class", "inline")
+    // console.log(product_name)
+
+    // var investor_role = document.createElement("p");
+    // investor_role.innerText = elem.position
+   
+    var button=document.createElement("button")
+    button.innerText="Add to Cart"
+    button.setAttribute("class", "btn")
+
+    var price=document.createElement("h2")
+    price.innerText=elem.price;
+    // console.log(price);
+   price.setAttribute("class", "att")
+
+
+    var strprice=document.createElement("strike")
+    strprice.innerText=elem.strprice;
+    strprice.setAttribute("class", "fon")
+
+   button.addEventListener("click",function(){
+    AddtoCart(elem)
+   })
+
+    box.append(investor_avtar,product_name,strprice,price,button)
+    document.querySelector("#big").append(box)
+  });
+
+  function  AddtoCart(elem){
+    cartLs.push(elem)
+    localStorage.setItem("home",JSON.stringify(cartLs));
+   alert("Product Added Sucessfully")
+ 
+  }
+
+  // document.querySelector(".cartIcon").addEventListener("click", onCartClick);
+       
+  //      function onCartClick() {
+  //             event.preventDefault();
+  //          document.getElementById("cartData").style.display = "block";
+   
+  //      }
+   
+  //      document.getElementById("cartBack").addEventListener("click", cartBack);
+  //      function cartBack() {
+  //          document.getElementById("cartData").style.display = "none";
+  //      }
+  //       let data = JSON.parse(localStorage.getItem("home"))||[];
+       
+  //       data.forEach(e => {
+  //           let div = document.createElement("div")
+  //           let img = document.createElement("img");
+  //           img.src=e.avtar;
+  //           let price = document.createElement("h1");
+  //           price.innerText=e.price;
+   
+  //           var input=document.createElement("input")
+  //           input.innerText=e.input;
+   
+  //          div.append(img,price)
+         
+           
+           
+           
+            
+  //          // let div1 = document.createElement(div);
+  //          // div1.append(sum)
+  //          document.getElementById("team").append(div);
+   
+  //       });
+   
+   
+
+</script>

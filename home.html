@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <style>
+
+
+
+
+
+
+
+
+
+        /* cartdata */
+        #cartData {
+            position: fixed;
+            border: 2px solid black;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color:grey;
+            width: 15%;
+            height: 50%;
+            display: none;
+
+
+        }
+
+        #cartData img{
+            width:115px;
+            height:100%;
+        }
+        #team{
+            width:50px;
+            height:100px;
+        }
+        #checkout{
+            margin-top:190px;
+            height: 40px;
+            width:250px;
+        }
+
+        #cartBack{
+            margin-top: 60px;
+            text-align: center;
+            
+            
+        }
+
+
+        #martData {
+            position: fixed;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color:white;
+            width: 20%;
+            height: 500px;
+            display: none;
+            text-align: center;
+        
+
+        }
+
+        #martBack{
+           
+            text-align: center;
+        }
+          .nam{
+             font-size: 24px;
+             margin: 0%;
+             padding: 0%;
+              
+          }
+          .red{
+              color:red
+          }
+          .user{
+              height: 40px;
+              width: 300px;
+             text-align: center;
+          }
+          .yel{
+              background-color: rgb(213, 232, 89);
+             font-size:30px;
+            width: 300px;  
+            margin-top: 15px;
+            }
+        /* body{
+        padding: 10px 0 0 50px;
+      } */
+        h1 {
+            font-family: arial;
+        }
+
+        #menu {
+
+            margin: auto;
+            margin-top: 20px;
+            height: 40px;
+            width: 60%;
+            /* border: 1px solid red;  */
+        }
+
+        #menu>ul {
+            background: #2c3e50;
+        }
+
+        #menu ul {
+            list-style: none;
+            position: relative;
+            float: left;
+            margin: 0;
+            padding: 0;
+        }
+
+        #menu ul a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 40px;
+            padding: 0 15px;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        #menu ul li {
+            position: relative;
+            float: left;
+            margin: 0;
+            padding: 0
+        }
+
+        #menu ul li.active {
+            background: #27ae60
+        }
+
+        #menu ul li:hover {
+            /* background:#f6f6f6 */
+            background: #2ecc71;
+        }
+
+        #menu ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: black;
+            padding: 0
+        }
+
+        #menu ul ul li {
+            float: none;
+            width: 500px;
+            border-left: 3px solid #27ae60;
+
+        }
+
+        #menu ul ul li:hover {
+            border-left: 3px solid #2c3e50;
+        }
+
+        #menu ul ul a {
+            line-height: 120%;
+            padding: 10px 15px
+        }
+
+        #menu ul ul ul {
+            top: -4px;
+            left: 100%
+        }
+
+        #menu ul li:hover>ul {
+            display: block
+        }
+
+        h2,
+        h3 {
+            display: inline;
+
+
+
+        }
+
+        a {
+            display: inline;
+
+        }
+
+
+
+
+        #second {
+            display: flex;
+            height: 500px;
+            width: 95%;
+            /* border: 1px solid black; */
+            margin: auto;
+
+        }
+
+        #second>div {
+            height: 500px;
+            width: 32%;
+            margin: auto;
+            /* border:1px solid red; */
+            margin-top: 20px;
+        }
+
+        .dif {
+            height: 90%;
+            width: 100%;
+        }
+
+        #large {
+            height: 300px;
+            width: 80%;
+            margin: auto;
+            /* border: 1px solid black; */
+            margin-top: 50px;
+
+        }
+
+        #othercat {
+            height: 80px;
+            width: 50%;
+            margin: auto;
+            /* border: 1px solid red; */
+            margin-top: 10px;
+            display: flex;
+
+        }
+
+        #othercat>div {
+            height: 80px;
+            width: 30%;
+            margin: auto;
+            /* border: 1px solid black; */
+        }
+
+        .kart {
+            padding-top: 20px;
+            padding-left: 75px;
+        }
+
+        #electric {
+            height: 400px;
+            width: 94%;
+            /* border: 1px solid red; */
+            margin: auto;
+            margin-top: 20px;
+            display: flex;
+        }
+
+        #electric>div {
+            height: 400px;
+            width: 45%;
+            /* border: 1px solid black; */
+
+            margin: auto;
+        }
+
+        .elec {
+            height: 100%;
+            width: 100%;
+        }
+
+        #head {
+            height: 300px;
+            width: 80%;
+            margin: auto;
+            /* border: 1px solid black; */
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #clothing {
+            margin-top: 20px;
+            height: 400px;
+            width: 94%;
+            /* border: 1px solid red; */
+            margin: auto;
+            margin-top: 20px;
+            display: flex;
+        }
+
+        #clothing>div {
+            height: 400px;
+            width: 45%;
+            /* border: 1px solid black; */
+
+            margin: auto;
+        }
+
+        .cloth {
+            height: 100%;
+            width: 100%;
+        }
+
+        #grid1 {
+            width: 97%;
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(1, 350px);
+            /* border: 1px solid black; */
+            gap: 15px;
+            text-align: center;
+            display: flex;
+
+
+
+
+        }
+
+        #grid1>div {
+            border: 1px solid black;
+
+        }
+
+        #grid2 {
+            width: 97%;
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(1, 350px);
+            /* border: 1px solid black; */
+            gap: 15px;
+            text-align: center;
+            display: flex;
+
+
+
+
+            /* }
+#grid2>div{
+    /* border: 1px solid black; */
+
+        }
+
+        * #foot {
+            height: 300px;
+            width: 98%;
+            margin: auto;
+            /* border: 1px solid black; */
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #grid3 {
+            width: 97%;
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(1, 350px);
+            /* border: 1px solid black; */
+            gap: 15px;
+            text-align: center;
+            display: flex;
+
+
+
+
+        }
+
+        /* #grid3>div{
+    /* border: 1px solid black; */
+
+        /* } * */
+
+        #para {
+            height: 500px;
+            width: 60%;
+            /* color:#1E516c; */
+            text-align: center;
+            margin: auto;
+            background-color: rgb(233, 228, 228);
+
+
+        }
+
+        .pa {
+            font-size: 20px;
+        }
+
+        #grid4 {
+            width: 60%;
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(1, 40px);
+            /* border: 1px solid black; */
+            gap: 15px;
+            text-align: center;
+            margin: auto;
+
+
+
+
+
+        }
+
+        /* #grid4>div{
+    /* border: 1px solid black; */
+
+        /* } */
+
+        #yellow {
+            height: 550px;
+            width: auto;
+            background-color: rgb(159, 159, 9);
+            margin-top: 20px;
+        }
+
+        #main {
+            height: 550px;
+            width: 70%;
+            /* border: 1px solid blue; */
+            display: flex;
+            margin: auto;
+            color: white;
+            font-weight: bold;
+
+        }
+
+        #main>div {
+            height: 550px;
+            width: 28%;
+            /* border: 1px solid blue; */
+            margin: auto;
+        }
+
+        .white {
+            color: white;
+        }
+
+        /* search bar */
+
+        #search {
+            height: 80px;
+            width: 100%;
+            /* border:1px solid #1E516c; */
+            display: flex;
+        }
+
+        #search>div {
+            height: 80px;
+            width: 31%;
+            margin: auto;
+            /* border:1px solid #1E516c; */
+        }
+
+        .size {
+            height: 100%;
+            width: 100%;
+        }
+
+        #bawa {
+            margin-bottom: 40px;
+        }
+
+        .container {
+            margin-top: 20px;
+            height: auto;
+            width: 100%;
+            /* border: 1px solid black; */
+        }
+
+        /* .cart{ */
+        /* border: 1px solid green;  */
+
+
+        /* } */
+        /* .mart{ */
+        /* border: 1px solid green;  */
+
+
+        /* } */
+
+
+        #half>div {
+            height: 80px;
+            width: 33%;
+
+
+
+
+        }
+
+        .footer {
+            height: 600px;
+            width: 100%;
+            margin-top: 15px;
+
+        }
+
+        .ftimg {
+            height: 125%;
+            width: 100%;
+        }
+
+        .blfoot {
+            height: 300px;
+            width: 100%;
+        }
+
+        @media all and(min-width:451px)and(max-width:700px) {
+            #grid1 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media all and (min-width: 100px) and (max-width: 450px) {
+            #grid1 {
+                grid-template-columns: repeat(1, 1fr);
+
+
+            }
+        }
+
+
+
+
+
+
+        /* search bar */
+    </style>
+</head>
+
+<body>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="search">
+        <div>
+            <input style="width:300px;height:40px;margin-top:20px;margin-left:30px;" type="search" text="search herer"
+                placeholder="search herer">
+        </div>
+       
+        <div>
+            <img class="size" src="https://www.uboric.com/wp-content/uploads/2021/04/uboric.svg" alt="">
+        </div>
+        <div style="display:flex" id="half">
+            <div></div>
+            <div></div>
+            <div>
+                <img class="mart" style="height:100%;width:100%;"
+                    src="data:image/png;base64,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"
+                    alt="">
+            </div>
+            <div>
+                <img class="cartIcon" style="height:100%;width:100%;"
+                    src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAH8AfwMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAAAQUEBgcCCP/EAC8QAAEDBAIBAgUDBAMAAAAAAAABAgMEBQYREiEHMYETIkFRcUJSYSOCkZIUFTL/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AO4gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABC+gEg0fO81uWMVtPT0GO1NzbNHzWViv4tXeuPysd31vvXqVWKeUZ7tklPaLrZHWxahFSN8krtq7XScXMb699gdNBCLskAAAAAAAAAAAAAABe0AAjj+TlXm+1SxRWzJqHaVFvnax70+iK5FYvs5ET+46sV+QWuK9WSutk/TKqF0ar+1VTpfyi6X2A5ZQZ35Gr6SKrocbp6inlTkyVkDtOT/AHEWeeRZqyejixundUwI10sSQO5MR3/lV+f66UwfGN0yunWuxi1JaEkoJHPcy4/FRUVXKjkbx+iO77T9RdRPzal8gzsRuPJca62NkcnKf4CxxyK1NLrlz+f8aAw5M+8iRV0NDLjdO2qna58UKwO5Pa3XJU+f6bT/ACK7PPItupJauvxqnp6aJNvkkhciN71+/wC5mvXNarPo9sx9bjQ21VROU/wUZK/W963y+T8aKLydcsrrH0GL3T/qFnrZGSMZbllVfXTefP6b76/aFdG8bZDdMmsLrldoKaHnO5kHwEVEc1vSqu1X9XJPY20wLHbIbPaaO3UqIkNNE2Nv86TtfdezPCAAAAAAAAAAAEO7RSSF9AOGeWKOtxvNqe92iqfRLcmcVnb1wemkfvpelTivsqmauD+SZa6K4rkVG+qjjWOOf/kLtGO0qon9LWl0hq/km6Vl3yi8U1zr1ght71bSUjmOVr1TSda6RyovLkv06LjFcAyLIbDSXSLLKujjnaqshc+Z2moukXaSIml1v0CrJmDeSo66avjyCkbVzMbHJN8d3JzW70i/0/ptSzxLAL/T5fHkGW11PWywRKkTmSOe5X60m9tTSIiu91NZyvA8kxuw1N2dllZVtp+KuiZJMxdK5EVd/EX03v2K/wAeX+60mXWangvNRcIq9UbVU0rpHJGve2/Oq9tROXJPwEfQ7fRCSE9EJAAAAAAAAAAAAAAKS8YnYL1Vx1V0tNLUzsTikkjO1T7Lr1T+F2XEcccTGsiY1jGpprWppET7HsAeJYo5Y3skY17HtVrmuTaOT7KVFmxSw2SpkqbXaaamnemlexnaJ9k+yfwhdAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/Z"
+                    alt="">
+            </div>
+
+        </div>
+    </div>
+    <!-- search bar -->
+
+    <!-- categories -->
+    <div>
+        <nav id="menu">
+
+            <ul>
+                <li class="active"><a href="home.html">Home</li></a>
+                <li><a href="#">Categories</a>
+                    <ul>
+                        <li><a href="clothing.html">Fashion</a>
+                            <ul>
+                                <li><a href="foot.html">
+                                        <h2>Foot Wear </h2>
+                                        <h3>Shocks</h3>
+                                    </a></li>
+                                <li><a href="foot.html">Men's footwear</a></li>
+                                <li><a href="foot.html">Casual Chapple/Slippers</a></li>
+                                <li><a href="foot.html">Casual Sandals</a></li>
+                                <li><a href="foot.html">
+                                        <h2>Casual/Party Shoes</h2>
+                                        <h3>Shocks</h3>
+                                    </a></li>
+                                <li><a href="#">Chappal /Slippers</a></li>
+                                <li><a href="#">Crocs</a></li>
+                                <li><a href="#">Flip Flops</a></li>
+                                <li><a href="#">Loafers</a></li>
+                                <li><a href="#">Mojdi</a></li>
+                                <li><a href="#">
+                                        <h2>Sneakers</h2>
+                                        <h3>Shocks</h3>
+                                    </a></li>
+                                <li><a href="#">Sports Sandals</a></li>
+                                <li><a href="#">Sports Shoes</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="kitchen 1.html">Kitchen</a>
+                            <ul>
+                                <li>
+                                    <h2>Kitchen Ware</h2>
+                                    <h3>Household Supplies</h3>
+                                    <h3>Grocery</h3>
+                                    <h3>Spice</h3>
+                                </li>
+                                <li><a href="airtight.html">Air Tight Containers</a></li>
+                                <li><a href="airtight.html">Gas Lighter</a></li>
+                                <li><a href="airtight.html">Kitchen Tools</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="home.html">Accessories</a>
+                            <ul>
+                                <li><a href="#"></a></li>
+                                <h2> Unisex Bracelets</h2>
+                                <h3>Jewellery</h3>
+                                <h3>Bathroom Accessories</h3>
+                                <h3>Spice</h3>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Health Personal Care</a>
+
+                    <ul>
+                        <li><a href="#">
+                                <h2>Health Care </h2>
+                                <h3>Bombay Shaving Company</h3>
+                        </li>
+                        <li><a href="#">
+                                <h2> Day Joy</h2>
+                                <h3>Day Joy</h3>
+                        </li>
+                        <li><a href="#">
+                                <h2> Face Mask</h2>
+                                <h3> Dr Batras
+                                </h3>
+                        </li>
+                        <li><a href="#"> GNFC</a></li>
+                        <li><a href="#"> Oxi9</a></li>
+                        <li><a href="#"> Shreeji Sanjivani Gurukul</a></li>
+                    </ul>
+
+                </li>
+
+
+                <li><a href="#">Electronics</a>
+                    <ul>
+                        <li><a href="#"> Headphones</a></li>
+                        <li><a href="#">From 549</a></li>
+                        <li><a href="#">From 1132</a></li>
+                        <li><a href="#">From 1714</a></li>
+                        <li><a href="#">From 2297</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Electric Appilances</a>
+                    <ul>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Speakers</a></li>
+
+                    </ul>
+
+                </li>
+
+
+                <li><a href="#">Paintings</a>
+
+                </li>
+
+                <li><a href="#">Anti Punture Liquid</a>
+
+
+                </li>
+
+
+                <ul>
+                    <li><a href="#">Deep Menu 1</a>
+                        <ul>
+                            <li><a href="#">Sub Deep 1</a></li>
+                            <li><a href="#">Sub Deep 2</a></li>
+                            <li><a href="#">Sub Deep 3</a></li>
+                            <li><a href="#">Sub Deep 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Deep Menu 2</a></li>
+                </ul>
+                </li>
+
+            </ul>
+            </li>
+
+            <li><a href="signup.html"> Customer/Guest login</a>
+
+            </li>
+            <li><a href="bulkorder.html">Merchant/Bulk Order</a>
+
+            <li><a href="seller.html"> Become A Seller</a></li>
+
+
+        </nav>
+    </div>
+    <!-- categories -->
+
+    <!-- <div id="bawa">
+    <h1 style="text-align:center;margin-top:30px;">Kitchen Ware</h1>
+</div>
+    -->
+
+    <!-- woodstrap -->
+    <div class="container">
+        <!-- <h2>Carousel Example</h2> -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div style="width:100%;" class="carousel-inner">
+
+                <div class="item active">
+                    <img src="kitchen.png" alt="" style="width:100%;height:600px;">
+                    <div class="carousel-caption">
+
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="cloth.png" alt="" style="width:100%;height:600px;">
+                    <div class="carousel-caption">
+
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="head.png" alt=""
+                        style="width:100%;height:600px;">
+                    <div class="carousel-caption">
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- woodstrap -->
+    <div id="second">
+        <div>
+            <a href="kitchen 1.html"> <img class="size"
+                    src="https://www.uboric.com/wp-content/uploads/2020/12/kithchen-tools-768x602.jpg"></a>
+        </div>
+        <div>
+            <a href="airtight.html"> <img class="size"
+                    src="https://www.uboric.com/wp-content/uploads/2020/12/Air-Tight-Containers-768x602.jpg"></a>
+
+        </div>
+        <div>
+            <img class="dif" src="https://www.uboric.com/wp-content/uploads/2020/12/Gas-Lighter-1024x1024.jpg">
+        </div>
+    </div>
+    <div id="large">
+        <img style="height: 100%;width: 100%;" src="https://www.uboric.com/wp-content/uploads/2020/08/Uboric-1.jpg"
+            alt="">
+    </div>
+
+    <div id="othercat">
+        <div>
+            <img class="kart"
+                src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/other-category-heading-pkx8tu1r8n97qduq2ja9rlt0l2lgx8yc1tsaz101ow.png">
+        </div>
+        <div>
+            <h1 style="text-align:center;color: gray;">OTHER CATRGORIES</h1>
+        </div>
+        <div>
+            <img class="kart"
+                src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/other-category-heading-2-e1608267154124-pkx8tt3x1t7xerw380vn741jzoq3pjulpp4thr1fv4.png">
+        </div>
+    </div>
+    <div id="electric">
+        <div>
+           <a href="headphone.html"> <img class="elec" src="https://www.uboric.com/wp-content/uploads/2021/12/banner1-1-1.jpg" alt=""></a>
+        </div>
+        <div>
+            <img class="elec" src="https://www.uboric.com/wp-content/uploads/2021/12/banner2-1.jpg" alt="">
+        </div>
+    </div>
+    <div id="head">
+        <a href="headphone.html"><img style="height: 100%;width: 100%;" src="https://www.uboric.com/wp-content/uploads/2021/02/Headphone.jpg"
+            alt=""></a>
+    </div>
+    <div id="clothing">
+        <div>
+           <a href="clothing.html"><img class="cloth" src="https://www.uboric.com/wp-content/uploads/2021/12/banner3-1.jpg" alt=""></a> 
+        </div>
+        <div>
+            <img class="cloth" src="https://www.uboric.com/wp-content/uploads/2021/12/banner4-1.jpg" alt="">
+        </div>
+    </div>
+    <div id="grid1">
+        <div>
+            <img class="size" src="https://www.uboric.com/wp-content/uploads/2020/12/Socks-400x601.jpg">
+        </div>
+        <div>
+            <img class="size" src="https://www.uboric.com/wp-content/uploads/2020/12/Personal-Care-400x601.jpg" alt="">
+        </div>
+        <div>
+            <img class="size" src="https://www.uboric.com/wp-content/uploads/2020/12/Braclate-400x601.jpg" alt="">
+        </div>
+        <div>
+            <img class="size" src="https://www.uboric.com/wp-content/uploads/2020/12/Grocery-400x601.jpg" alt="">
+        </div>
+        <div>
+            <img class="size" src="https://www.uboric.com/wp-content/uploads/2020/12/Health-Care-400x601.jpg" alt="">
+        </div>
+    </div>
+    <div id="othercat">
+        <div>
+            <img class="kart"
+                src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/spices-heading-2-e1608267173425-pkx8te2i0gnc90hxnudm37u6his8ae6wbmp1tbnqmo.png">
+        </div>
+        <div>
+            <h1 style="text-align:center;color: gray;">SPICES</h1>
+        </div>
+        <div>
+            <img class="kart"
+                src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/spices-heading-2-e1608267173425-pkx8te2i0gnc90hxnudm37u6his8ae6wbmp1tbnqmo.png">
+        </div>
+    </div>
+    <div id="grid2">
+        <div>
+            <img class="size" src="https://www.uboric.com/wp-content/uploads/2020/12/Spices-1-400x601.jpg">
+        </div>
+        <div>
+            <img class="size" src="https://www.uboric.com/wp-content/uploads/2020/12/Spices-2-400x601.jpg" alt="">
+        </div>
+        <div>
+            <img class="size" src="https://www.uboric.com/wp-content/uploads/2020/12/Spices-3-400x601.jpg" alt="">
+        </div>
+        <div>
+            <img class="size" src="https://www.uboric.com/wp-content/uploads/2020/12/Spices-5-400x601.jpg" alt="">
+        </div>
+        <div>
+            <img class="size" src="https://www.uboric.com/wp-content/uploads/2020/12/Spices-4-400x601.jpg" alt="">
+        </div>
+    </div>
+    <div id="othercat">
+        <div>
+            <img class="kart"
+                src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/shoes-icon-right-e1605175492472-pkxdahmpc96i32hqyh9qfkc7owqxivqr4zuwukso7k.png">
+        </div>
+        <div>
+            <h1 style="text-align:center;color: gray;">FOOT WEAR</h1>
+        </div>
+        <div>
+            <img class="kart"
+                src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/shoes-icon-right-e1605175492472-pkxdahmpc96i32hqyh9qfkc7owqxivqr4zuwukso7k.png">
+        </div>
+    </div>
+    <div id="foot">
+      <a href="foot.html">  <img style="height: 100%;width: 100%;"
+            src="https://www.uboric.com/wp-content/uploads/elementor/thumbs/men-fashion-pf2rgkwglk7z47uh031vpxcshl64adc389ivxapmss.jpg"
+            alt=""></a>
+    </div>
+    <div id="grid3">
+        <div>
+            <img class="size" src="https://www.uboric.com/wp-content/uploads/2020/12/Foot-Wear-1-400x601.jpg">
+        </div>
+        <div>
+            <img class="size" src="https://www.uboric.com/wp-content/uploads/2020/12/Foot-Wear-3-400x601.jpg" alt="">
+        </div>
+        <div>
+            <img class="size" src="https://www.uboric.com/wp-content/uploads/2020/12/Foot-Wear-2-400x601.jpg" alt="">
+        </div>
+        <div>
+            <img class="size" src="https://www.uboric.com/wp-content/uploads/2020/12/Foot-Wear-400x601.jpg" alt="">
+        </div>
+        <div>
+            <img class="size" src="https://www.uboric.com/wp-content/uploads/2020/12/Foot-Wear-5-400x601.jpg" alt="">
+        </div>
+    </div>
+
+    <div id="para">
+        <h2>The Ultimate Domestic Online Shopping Experience Platform in India</h2>
+        <p class="pa">Online shopping with Uboric is quick, convenient and trouble-free. You can shop for the desired
+            product right from the comfort of your home and get them delivered straight to your doorstep. Uboric offers
+            you the chance to choose top branded products sitting in the comfort of your homes and just clicking on your
+            requirements to get it delivered at your doorstep. Your search for the latest trending variety of unique
+            products ends right here. A wide range of international products from global brands are available at your
+            fingertips. We provide you with a world-class online shopping experience, along with superior service, to
+            suit all your specific requirements. Our products are very reasonably priced and are not easily available
+            elsewhere. Our high-end technology-based systems, combined with a human approach, ensure that you have an
+            amazing and blissful online shopping experience with us. Our emphasis on customer delight drives every
+            activity we undertake to provide you an ultimate, hassle-free and pleasant shopping experience. Our diverse
+            categories of products comprise of fashion & jewellery, mobiles and tablets, home and furniture,
+            electronics, health care and supplements, sports and fitness, beauty and perfumes. We offer almost every
+            variety of product that your heart desires. Just Go Ahead and Explore the magical world of online shopping
+            with Uboric! 24×7 Customer Care: For all your queries and concerns regarding your shopping orders.</p>
+        <h2>Benefits of shopping on Uboric :</h2>
+
+    </div>
+    <div id="grid4">
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+        <div>
+        </div>
+    </div>
+    <div class="footer">
+        <img class="ftimg" src="footer.png" alt="">
+    </div>
+    <div class="blfoot">
+        <img class="ftimg" src="blfoot.png" alt="">
+    </div>
+
+    <div id="cartData">
+        <div><p style="font-size:30px;" id="cartBack">X</p></div>
+
+                    <div id="team"></div>
+
+        <div>
+            <button id="checkout"><a href="checkout.html">Checkout</a></button>
+        </div>
+      
+    </div>
+    
+   <div id="martData">
+    <div>
+        <span id="martBack" class="material-symbols-outlined">
+            cancel
+            </span>
+        <h1>
+        Sign In</h1>
+<a href="signup.html"><P style="font-size: 27px;">Create Account</P></a>
+<hr style="border:1px solid grey">
+<p class="nam">Username or email <span class="red">*</span></p>
+<input class="user" type="text">
+<p class="nam">Password <span class="red">*</span></p>
+<input class="user" type="text">
+<div style="font-size: 22px;">LOST YOUR PASSWORD?</div>
+
+<button class="yel">Login</button>
+</div>
+   </div>
+</body>
+
+</html>
+
+<script>
+    
+
+    document.querySelector(".cartIcon").addEventListener("click", onCartClick);
+       
+    function onCartClick() {
+           event.preventDefault();
+        document.getElementById("cartData").style.display = "block";
+
+    }
+
+    document.getElementById("cartBack").addEventListener("click", cartBack);
+    function cartBack() {
+        document.getElementById("cartData").style.display = "none";
+    }
+     let data = JSON.parse(localStorage.getItem("home"))||[];
+    
+     data.forEach(e => {
+         let div = document.createElement("div")
+         let img = document.createElement("img");
+         img.setAttribute("class", "cartImg")
+         img.src=e.avtar;
+         let price = document.createElement("h1");
+         price.innerText=e.price;
+
+         var input=document.createElement("input")
+         input.innerText=e.input;
+
+        div.append(img,price)
+      
+        
+        
+        
+         
+        // let div1 = document.createElement(div);
+        // div1.append(sum)
+        document.getElementById("team").append(div);
+
+     });
+
+
+
+
+
+document.querySelector(".mart").addEventListener("click", onmCartClick);
+
+function onmCartClick() {
+    document.getElementById("martData").style.display = "block";
+
+}
+
+document.getElementById("martBack").addEventListener("click", martBack);
+function martBack() {
+    document.getElementById("martData").style.display = "none";
+}
+
+
+
+</script>
