@@ -1,0 +1,201 @@
+#search {
+    height: 80px;
+    width: 100%;
+  
+    display: flex;
+  }
+
+  #search>div {
+    height: 80px;
+    width: 31%;
+    margin: auto;
+  
+  }
+
+  .size {
+    height: 100%;
+    width: 100%;
+  }
+
+  /* search bar */
+
+  /* categories */
+  #menu {
+
+    margin: auto;
+    margin-top: 30px;
+    height: 50px;
+    width: 60%;
+   
+  }
+
+  #menu>ul {
+    background: #2c3e50;
+  }
+
+  #menu ul {
+    list-style: none;
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  #menu ul a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 32px;
+    padding: 0 15px;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  #menu ul li {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0
+  }
+
+  #menu ul li.active {
+    background: #27ae60
+  }
+
+  #menu ul li:hover {
+    /*background:#f6f6f6*/
+    background: #2ecc71;
+  }
+
+  #menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: black;
+    padding: 0
+  }
+
+  #menu ul ul li {
+    float: none;
+    width: 500px;
+    border-left: 3px solid #27ae60;
+
+  }
+
+  #menu ul ul li:hover {
+    border-left: 3px solid #2c3e50;
+  }
+
+  #menu ul ul a {
+    line-height: 120%;
+    padding: 10px 15px
+  }
+
+  #menu ul ul ul {
+    top: -4px;
+    left: 100%
+  }
+
+  #menu ul li:hover>ul {
+    display: block
+  }
+
+  /* categories */
+  .kt {
+    text-align: center;
+  }
+
+  #half>div {
+          height: 80px;
+          width: 33%;
+}
+
+
+
+
+
+
+
+
+
+
+#main{
+  display: flex;
+
+  height:auto;
+  width:80%;
+  margin: auto;
+  gap:80px;
+ 
+}
+.nam{
+           font-size: 24px;
+           margin: 0%;
+           padding: 0%;
+           margin-left: 30px;
+            
+        }
+
+        .name{
+           font-size: 24px;
+           margin: 0%;
+           padding: 0%;
+           margin-left: 30px;
+            
+        }
+        .red{
+            color:red
+        }
+        .user{
+            height: 50px;
+            width: 400px;
+           text-align: center;
+           margin-left: 30px;
+        }
+
+        .users{
+            height: 50px;
+            width: 400px;
+           text-align: center;
+           margin-left: 30px;
+        }
+
+        .yel{
+            background-color: rgb(232, 177, 89);
+           font-size:30px;
+          width: 300px;  
+          margin-top: 15px;
+          margin-left:30px ;
+          }
+#left{
+  height: 500px;
+  width: 500px;;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-left: 50px;
+  background-color: rgb(246, 240, 240);
+
+}
+#right{
+  height: 600px;
+  width: 500px;;
+  
+}
+
+.footer {
+          height: 600px;
+          width: 100%;
+          margin-top: 15px;
+
+      }
+
+      .ftimg {
+          height: 125%;
+          width: 100%;
+      }
+
+      .blfoot {
+          height: 300px;
+          width: 100%;
+      }

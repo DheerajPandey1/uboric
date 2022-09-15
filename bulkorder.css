@@ -1,0 +1,176 @@
+#search {
+    height: 80px;
+    width: 100%;
+   
+    display: flex;
+  }
+
+  #search>div {
+    height: 80px;
+    width: 31%;
+    margin: auto;
+ 
+  }
+
+  .size {
+    height: 100%;
+    width: 100%;
+  }
+
+  /* search bar */
+
+  /* categories */
+  #menu {
+
+    margin: auto;
+    margin-top: 30px;
+    height: 50px;
+    width: 60%;
+
+  }
+
+  #menu>ul {
+    background: #2c3e50;
+  }
+
+  #menu ul {
+    list-style: none;
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  #menu ul a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 32px;
+    padding: 0 15px;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  #menu ul li {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0
+  }
+
+  #menu ul li.active {
+    background: #27ae60
+  }
+
+  #menu ul li:hover {
+    /*background:#f6f6f6*/
+    background: #2ecc71;
+  }
+
+  #menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: black;
+    padding: 0
+  }
+
+  #menu ul ul li {
+    float: none;
+    width: 500px;
+    border-left: 3px solid #27ae60;
+
+  }
+
+  #menu ul ul li:hover {
+    border-left: 3px solid #2c3e50;
+  }
+
+  #menu ul ul a {
+    line-height: 120%;
+    padding: 10px 15px
+  }
+
+  #menu ul ul ul {
+    top: -4px;
+    left: 100%
+  }
+
+  #menu ul li:hover>ul {
+    display: block
+  }
+
+  /* categories */
+  .kt {
+    text-align: center;
+  }
+
+  #half>div {
+          height: 80px;
+          width: 33%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#flex{
+      display: flex;
+      gap:55px;
+      margin-top: 20px;
+  }
+  #main{
+      width: 70%;
+      margin: auto;
+      margin-top: 20px;
+  }
+  input{
+      height: 50px;
+      width:500px;
+      margin: 0%;
+      padding: 0%;
+      
+  }
+  .close{
+      margin: 3px;
+      padding: 3px;
+      font-size: 18px;
+      margin-top: 20px;
+  }
+#ram{
+  width: 1059px;
+
+}
+
+#bigin{
+  height: 150px;
+  width:1059px;
+}
+.footer {
+          height: 600px;
+          width: 100%;
+          margin-top: 15px;
+
+      }
+
+      .ftimg {
+          height: 125%;
+          width: 100%;
+      }
+
+      .blfoot {
+          height: 300px;
+          width: 100%;
+      }

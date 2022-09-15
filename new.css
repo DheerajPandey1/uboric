@@ -1,0 +1,373 @@
+#cartData {
+    position: fixed;
+    border: 2px solid black;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color:grey;
+    width: 15%;
+    height: 50%;
+    display: none;
+
+
+}
+
+#cartData img{
+    width:100%;
+    height:100%;
+}
+#team{
+    width:50px;
+    height:100px;
+}
+#checkout{
+    margin-top:130px;
+}
+
+#cartBack{
+    margin-top: 60px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#search {
+height: 80px;
+width: 100%;
+/* border: 1px solid #1E516c; */
+display: flex;
+}
+
+#search>div {
+height: 80px;
+width: 31%;
+margin: auto;
+/* border: 1px solid #1E516c; */
+}
+
+.size {
+height: 100%;
+width: 100%;
+}
+
+/* search bar */
+
+/* categories */
+#menu {
+
+margin: auto;
+margin-top: 30px;
+height: 50px;
+width: 60%;
+/* border: 1px solid red; */
+}
+
+#menu>ul {
+background: #2c3e50;
+}
+
+#menu ul {
+list-style: none;
+position: relative;
+float: left;
+margin: 0;
+padding: 0;
+}
+
+#menu ul a {
+display: block;
+color: #fff;
+text-decoration: none;
+font-weight: 700;
+font-size: 15px;
+line-height: 32px;
+padding: 0 15px;
+font-family: Helvetica, Arial, sans-serif;
+}
+
+#menu ul li {
+position: relative;
+float: left;
+margin: 0;
+padding: 0
+}
+
+#menu ul li.active {
+background: #27ae60
+}
+
+#menu ul li:hover {
+/*background:#f6f6f6*/
+background: #2ecc71;
+}
+
+#menu ul ul {
+display: none;
+position: absolute;
+top: 100%;
+left: 0;
+background: black;
+padding: 0
+}
+
+#menu ul ul li {
+float: none;
+width: 500px;
+border-left: 3px solid #27ae60;
+
+}
+
+#menu ul ul li:hover {
+border-left: 3px solid #2c3e50;
+}
+
+#menu ul ul a {
+line-height: 120%;
+padding: 10px 15px
+}
+
+#menu ul ul ul {
+top: -4px;
+left: 100%
+}
+
+#menu ul li:hover>ul {
+display: block
+}
+
+/* categories */
+.kt {
+text-align: center;
+}
+
+/* small div */
+/* #main{
+  height: 1400px;
+  width:100%;
+ border: 1px solid black;
+  display: flex;
+  margin-top: 50px;
+
+}
+.small{
+  height: 1400px;
+  width:25%;
+  border: 1px solid red;
+  font-family: 'Barlow Condensed' , sans-serif;
+
+min-height: 40vh;
+}
+*/
+#half>div {
+    height: 80px;
+    width: 33%;
+}
+
+
+.priceSlider {
+width: 300px;
+background-color: #fff;
+border-radius: 5px;
+padding: 10px 20px;
+box-shadow: 0px 0px 3px 1px #888;
+margin-top: 400px;
+margin-left: 16px;
+}
+
+.priceSlider h1 {
+font-size: 17px;
+font-weight: bold;
+}
+
+.priceSlider p {
+font-size: 10px;
+margin-top: 20px;
+}
+
+.min-max label {
+font-size: 14px;
+float: left;
+margin-right: 5px;
+line-height: 1.6;
+}
+
+.min {
+float: left;
+}
+
+.max {
+float: right;
+}
+
+.min-max {
+width: 90%;
+max-width: 200px;
+margin: 0 auto;
+padding: 25px 0px 15px 0px;
+}
+
+.min-max span {
+font-size: 10px;
+text-align: center;
+display: inline-block;
+width: 30px;
+border: 1px solid #dedede;
+}
+
+.min-max-range {
+padding: 30px 0px 20px 0px;
+}
+
+.range {
+-webkit-appearance: none;
+appearance: none;
+width: 50%;
+height: 10px;
+max-width: 400px;
+background-color: #dedede;
+margin: 0;
+padding: 0;
+outline: none;
+float: left;
+}
+
+.range::-webkit-slider-thumb {
+-webkit-appearance: none;
+appearance: none;
+background-color: #0070BF;
+height: 10px;
+width: 10px;
+border-radius: 50%;
+cursor: pointer;
+}
+
+.range::moz-range-thumb {
+-webkit-appearance: none;
+appearance: none;
+background-color: #0070BF;
+height: 10px;
+width: 10px;
+border-radius: 50%;
+cursor: pointer;
+}
+
+
+/* slider style */
+
+/* bigdiv */
+/* h2,
+h3 {
+display: inline;
+
+
+
+} */
+
+a {
+display: inline;
+
+}
+
+#main {
+height: 1400px;
+width: 100%;
+
+display: flex;
+margin-top: 50px;
+
+}
+
+.small {
+height: 1400px;
+width: 25%;
+border: 1px solid red;
+}
+
+#big {
+height: 1400px;
+width: 100%;
+
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(4, auto);
+row-gap: 15px;
+column-gap: 15px;
+text-align: center;
+
+}
+
+#big>div{
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.size {
+height: 80%;
+width: 70%;
+text-align: center;
+
+}
+
+.nomargin {
+font-size: 18px;
+margin: 0%;
+padding: 0;
+}
+
+.inline {
+font-size: 18px;
+display: inline;
+margin: 0%;
+padding: 0%;
+}
+
+.footer {
+height: 600px;
+width: 100%;
+margin-top: 15px;
+
+}
+
+.ftimg {
+height: 125%;
+width: 100%;
+}
+
+.blfoot {
+height: 300px;
+width: 100%;
+}
+.spicesImg{
+width:200px;
+height:200px;
+
+}
+
+
+
+.inline{
+display: inline-block;
+
+}
+.att{
+margin: 4%;
+padding: 0%;
+display: inline;
+}
+.fon{
+font-size: 22px;
+display: inline;
+}
+.btn{
+display: block;
+margin: auto;
+margin-top: 10px;
+}
